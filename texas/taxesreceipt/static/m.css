@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.menu-bar li :hover{
+    color: rgb(255, 255, 255);
+}
+.position {
+    /* margin-left: 300px; */
+    position: absolute;
+    left: 34%;
+}
+body {
+    background-color: #fafafa;
+    background-size: cover;
+    background-position:center ;
+    font-family: sans-serif;
+}
+.logout {
+    position: absolute;
+    left: 92%;
+}
+.logout-bottom {
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: rgb(23, 62, 94);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px 12px;
+    transition: 0.3s;
+}
+.logout-bottom:hover {
+    background-color:rgb(146, 145, 143) ;
+    color: rgb(0, 0, 0);
+}
+.logo {
+    width: 70px;
+}
+.menu-bar {
+    display: flex;
+    align-items: center;
+    background-color: rgb(184, 184, 184);
+    text-align: center;
+    position: relative;
+}
+
+.menu-bar ul li {
+    text-transform: capitalize;
+    width: auto;
+    padding: 15px;
+    margin: 0px 10px 5px 10px;
+    display: inline-flex;
+    list-style: none;
+}
+.menu-bar ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: 0.4s;
+    display: block;
+}
+.sub-menu-1 ul li a {
+    text-transform: capitalize;
+    width: 200px;
+    padding: 10px;
+    border-radius: 3px;
+    /* margin: 0px 10px 5px 10px; */
+    display: inline-flex;
+    list-style: none;
+}
+.sub-menu-1 ul li a:hover {
+    /* padding-left: 25px; */
+    color: rgb(255, 255, 255);
+    background-color: rgb(23, 62, 94);
+}
+
+.menu-bar ul li:hover {
+    background-color: rgb(146, 145, 143);
+    border-radius: 3px;
+    border-bottom: 1px solid rgb(49, 49, 49);
+}
+.sub-menu-1 {
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background-color: rgb(184, 184, 184);
+    margin-top: 34px;
+    opacity: .9;
+    margin-left: -15px;
+    border-radius:0px 0px 10px 10px;
+    /* border-top: 1px solid rgb(49, 49, 49); */
+}
+.menu-bar ul li:hover .sub-menu-1 ul {
+    display: block;
+    list-style-position: outside;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li {
+    display: block;
+    width: auto;
+    padding: 10px;
+    border-bottom: 1px solid rgb(182, 178, 175);
+    border-radius: 0px ;
+    background: transparent;
+    text-align:left ;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+    border-bottom: none;
+}
+table{
+    width: 100%;
+}
+/* (182, 180, 177) */
+table td {
+    padding: 15px;
+    background-color: rgb(182, 180, 177);
+    border: 1px solid rgb(121, 119, 119);
+    text-transform: capitalize;
+    font-size: 15px;
+    text-align: center;
+}
+
+table thead td{
+    background-color: rgb(23, 62, 94);
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    
+}
+.itemsdata {
+    border-left:20px solid rgb(12, 15, 14)  ;
+    border-right:20px solid rgb(12, 15, 14)  ;
+    background-color: rgb(23, 62, 94);
+    border-radius: 2px;
+    color: rgb(245, 239, 239);
+    margin-top: 7px;
+    margin-bottom: 5px;
+}
+.itemsfont {
+    padding: 5px 10px;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    font-size: 30px;
+    font-family: 'Original Surfer', cursive;
+    text-transform: capitalize;
+    
+}
+.code {
+    text-align: center;
+    font-size: 15px ;
+    text-transform: capitalize;
+    /* display: block; */
+    text-decoration:none ;
+}
+.code :hover {
+    background-color: rgb(23, 62, 94);
+    color: white;
+
+}
+
+.td-block:hover {
+    display: block;
+    background-color: rgb(145, 34, 34);
+}
+.button {
+    text-decoration: none;
+    color: black;
+}

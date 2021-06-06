@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
+integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+{% block content %}
+
+    {%for i in a1 %}
+    {{i.id}}
+    {{i.type}}
+
+    {%endfor%}
+
+    <center>
+        <table >
+          <!-- <caption><h2 class="itemsdata"><b class="itemsfont"> {{page_title}}</b></h2></caption> -->
+          <thead>
+            <tr>
+              <td>currency</td>
+              <td>date</td>
+              <td>customer name</td>
+            </tr>
+          </thead>
+          <tbody>
+            {% for i,n,m in list %}
+            <tr class="code">
+              <td class="linked">{{ i.type }}</td>
+              <td class="linked">{{ n.date_time_issued }}</td>
+              <td class="linked">{{ i.name }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>     <br><br><br>
+        <a class="btn btn-primary" href="">إرسال البيانات</a>
+        <a class="btn btn-primary" href="">الرئيسية</a>
+    </center>
+
+
+
+
+
+
+{% endblock %}
